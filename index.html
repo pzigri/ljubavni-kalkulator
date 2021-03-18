@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Ljubavni kalkulator</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">	
+	</head>
+	<body>
+		<h1>Ljubavni kalkulator</h1>
+		<div class="container">
+			<div class="profile">
+				
+				<button class="profile__avatar" id="toggleProfile">
+					Upišite svoje ime i ime svoje simpatije/cure/dečka i saznajte koliko ste stvoreni jedno za drugo! :)
+					<img src="img/scre.png" alt="Avatar" />
+				</button>
+				<div class="profile__form">
+					<div class="profile__fields">
+						<div class="field">
+							<input type="text" id="ona" class="input" required pattern=.*\S.* />
+							<label for="ona" class="label">Ona</label>
+						</div>
+						<div class="field">
+							<input type="text" id="on" class="input" required pattern=.*\S.* />
+							<label for="on" class="label">On</label>
+						</div>
+						<div class="profile__footer">
+							<span id="poruka">
+								
+							</span>
+							<button class="btn" id="izracunaj">
+								Provjerite vašu ljubav!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<ul id="rezultati">
+		</ul>
+		
+		<script src="js/ljubav.js"></script>
+		<script src="js/index.js"></script>
+
+	</body>
+</html>
